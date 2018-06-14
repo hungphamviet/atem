@@ -1,0 +1,20 @@
+# =============================================================================
+# BEHAVE CONFIGURATION
+# =============================================================================
+# FILE: .behaverc, behave.ini
+#
+# SEE ALSO:
+#  * http://packages.python.org/behave/behave.html#configuration-files
+#  * https://github.com/behave/behave
+#  * http://pypi.python.org/pypi/behave/
+# =============================================================================
+
+
+[behave]
+show_skipped = false
+show_source = false
+format = rerun
+outfiles = rerun_failing.features
+logging_level = INFO
+junit = true
+junit_directory = junitResults

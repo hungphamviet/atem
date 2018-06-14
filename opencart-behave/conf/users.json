@@ -1,0 +1,24 @@
+{
+  "Admin User": {
+    "username": "admin",
+    "password": "password"
+  },
+  "TestRail": {
+    "username": "qa@unifiedsocial.com",
+    "password": "q@r0ck5!"
+  },
+  "Forgot Password": {
+    "username": "qa.forgot.unified@gmail.com",
+    "password": "q@r0ck5!"
+  },
+  "Test Executor": {
+    "name": "Hung Pham"
+  },
+  "Test Email Server": {
+    "Email from": "hung.pham@unified.com"
+  },
+  "iHeart Media": {
+    "password": "Unified123!",
+    "username": "qa.forgot.unified+ih1@gmail.com"
+  }
+}

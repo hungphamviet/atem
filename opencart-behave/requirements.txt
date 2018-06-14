@@ -1,0 +1,10 @@
+# platform-ui-test required libraries:
+psycopg2
+behave
+PyHamcrest
+selenium
+requests
+neo4jrestclient
+pytz
+google-api-python-client
+lxml

@@ -1,0 +1,17 @@
+{
+  "Provider Admin": {
+    "password": "PASSWORD",
+    "username": "OPEN_AM_USER_NAME"
+  },
+  "Forgot Password": {
+    "password": "q@r0ck5!",
+    "username": "qa.forgot.unified@gmail.com"
+  },
+  "Test Executor": {
+    "name": "YOUR NAME"
+  },
+  "iHeart Media": {
+    "password": "Unified123!@#",
+    "username": "ihtest@mailinator.com"
+  }
+}

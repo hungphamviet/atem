@@ -1,0 +1,40 @@
+<testsuite errors="0" failures="0" hostname="hungpv-ubuntu" name="_store_front.Shopping functionality" skipped="0" tests="1" time="11.04742" timestamp="2018-06-14T17:15:54.990725"><testcase classname="_store_front.Shopping functionality" name="Checkout a product successfully" status="passed" time="11.04742"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @shopping-1000
+  Scenario: Checkout a product successfully
+    Given the user is in Shopping page ... passed in 2.859s
+    When the user adds product to Cart with information below ... passed in 1.652s
+      | key      | value  |
+      | name     | iPhone |
+      | quantity | 5      |
+    And the user performs Cart checkout ... passed in 0.501s
+    And the user selects checkout as "Guest" ... passed in 0.700s
+    And the user inputs payment details as below ... passed in 2.819s
+      | key       | value               |
+      | firstname | Hung                |
+      | lastname  | Pham                |
+      | email     | hungpv@gmail.com    |
+      | telephone | 123-456-7890        |
+      | address1  | 364 Cong Hoa Street |
+      | city      | Ho Chi Minh City    |
+      | postcode  | 70000               |
+      | region    | Moray               |
+    And the user completes Delivery method ... passed in 0.627s
+    And the user completes Terms & Condition agreement ... passed in 0.701s
+    And the user confirms Checkout ... passed in 0.616s
+    Then the user should be redirected to the "Checkout Success" page ... passed in 0.518s
+    And the checkout success content should display as below ... passed in 0.055s
+      """
+      Your order has been placed!
+      Your order has been successfully processed!
+      Please direct any questions you have to the store owner.
+      Thanks for shopping with us online!
+      Continue
+      """
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

@@ -1,0 +1,52 @@
+<testsuite errors="0" failures="1" hostname="hungpv-ubuntu" name="_admin_dashboard.Dashboard visibility" skipped="0" tests="3" time="11.048778" timestamp="2018-06-14T17:15:42.469404"><testcase classname="_admin_dashboard.Dashboard visibility" name="Login to the Dashboard" status="passed" time="4.021558"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @dashboard-1000
+  Scenario: Login to the Dashboard
+    Given the user is in Admin page ... passed in 2.502s
+    When the user logs in as "Admin User" ... passed in 1.333s
+    Then the user should be redirected to the "Dashboard" page ... passed in 0.037s
+    And the main menu should display in the Dashboard ... passed in 0.036s
+    And all widgets should display in the Dashboard ... passed in 0.114s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="_admin_dashboard.Dashboard visibility" name="View User Profile information" status="failed" time="3.353832"><failure message="&#10;Expected: 'My Profile'&#10;     but: was 'Profile'&#10;" type="AssertionError">
+<![CDATA[
+Failing step: Then the header of User Profile page should display as "My Profile" ... failed in 0.051s
+Location: features/_admin_dashboard.feature:20
+Assertion Failed: 
+Expected: 'My Profile'
+     but: was 'Profile'
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @dashboard-1005
+  Scenario: View User Profile information
+    Given the user is in Admin page ... passed in 1.877s
+    When the user logs in as "Admin User" ... passed in 0.989s
+    And the user clicks to Your Profile menu item ... passed in 0.437s
+    Then the header of User Profile page should display as "My Profile" ... failed in 0.051s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="_admin_dashboard.Dashboard visibility" name="View information of an Order" status="passed" time="3.673388"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @dashboard-1010
+  Scenario: View information of an Order
+    Given the user is in Admin page ... passed in 1.952s
+    When the user logs in as "Admin User" ... passed in 1.006s
+    And the user clicks View Action of an order ... passed in 0.711s
+    Then the user should be redirected to the "Order Information" page ... passed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
